@@ -17,9 +17,10 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Pixel Experience Stuff
-CUSTOM_BUILD_TYPE := UN-MINKAN
+# Pixel Extended Stuff
+PEX_BUILD_TYPE := OFFICIAL
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_FACE_UNLOCK := true
 
 PRODUCT_NAME := aosp_sweet
 PRODUCT_DEVICE := sweet
