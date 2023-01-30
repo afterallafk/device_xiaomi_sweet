@@ -11,18 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Project Blaze stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Pixel Extended Stuff
-PEX_BUILD_TYPE := OFFICIAL
+# Project Blaze Stuff
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := ＡＤＩＴＹＡ
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_FACE_UNLOCK := true
 
-PRODUCT_NAME := aosp_sweet
+PRODUCT_NAME := blaze_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
