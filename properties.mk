@@ -248,6 +248,12 @@ ro.sf.force_hwc_brightness=1
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.incremental.enable=1
 
+# IORAP
+PRODUCT_SYSTEM_PROPERTIES += \
+iorapd.perfetto.enable=true \
+iorapd.readahead.enable=true \
+vendor.iop.enable_prefetch_ofr=1
+
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.hardware.keystore_desede=true
