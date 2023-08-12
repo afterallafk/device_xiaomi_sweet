@@ -337,7 +337,8 @@ persist.vendor.radio.procedure_bytes=SKIP \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
 ro.telephony.default_cdma_sub=0 \
-ro.telephony.iwlan_operation_mode=legacy
+ro.telephony.iwlan_operation_mode=legacy \
+ro.telephony.block_binder_thread_on_incoming_calls
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
 ro.telephony.sim_slots.count=2 \
