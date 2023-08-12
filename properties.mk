@@ -229,6 +229,7 @@ persist.sys.sf.color_saturation=1.0 \
 ro.hardware.egl=adreno \
 ro.hardware.vulkan=adreno \
 ro.opengles.version=196610 \
+ro.config.avoid_gfx_accel=true \
 vendor.display.comp_mask=0 \
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0 \
 vendor.display.disable_decimation=1 \
