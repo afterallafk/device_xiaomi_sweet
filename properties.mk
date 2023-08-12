@@ -319,7 +319,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
 DEVICE_PROVISIONED=1 \
 ril.subscription.types=NV,RUIM \
 ro.telephony.default_network=22,22 \
-telephony.lteOnCdmaDevice=1
+telephony.lteOnCdmaDevice=1 \
+persist.radio.add_power_save=1
 
 # Radio (IMS)
 PRODUCT_SYSTEM_PROPERTIES += \
