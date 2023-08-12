@@ -254,6 +254,10 @@ iorapd.perfetto.enable=true \
 iorapd.readahead.enable=true \
 vendor.iop.enable_prefetch_ofr=1
 
+# Keyguard
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.wm.enable_remote_keyguard_animation=0
+
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.hardware.keystore_desede=true
