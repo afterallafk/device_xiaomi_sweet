@@ -400,6 +400,10 @@ persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=1
 
+# Watchdog
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.hw_timeout_multiplier=3
+
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.aware.interface=wifi-aware0
