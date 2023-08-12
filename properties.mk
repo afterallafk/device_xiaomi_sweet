@@ -246,6 +246,9 @@ ro.surface_flinger.enable_frame_rate_override=true \
 ro.surface_flinger.start_graphics_allocator_service=true \
 ro.surface_flinger.running_without_sync_framework=true
 
+PRODUCT_VENDOR_PROPERTIES += \
+vendor.display.perf_hint_window
+
 # DHA Tunning
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.config.dha_tunnable=1
