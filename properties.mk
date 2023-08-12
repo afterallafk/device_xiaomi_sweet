@@ -147,7 +147,8 @@ persist.vendor.cne.feature=1
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-camera.disable_zsl_mode=1
+camera.disable_zsl_mode=1 \
+persist.vendor.camera.is_type=4
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
