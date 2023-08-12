@@ -145,6 +145,10 @@ pm.sleep_mode=1
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
 persist.vendor.cne.feature=1
 
+# Cached app compaction
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.device_config.activity_manager.use_compaction=true
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.disable_zsl_mode=1 \
