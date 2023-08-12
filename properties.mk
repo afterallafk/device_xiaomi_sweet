@@ -136,6 +136,11 @@ ro.vendor.bluetooth.wipower=false
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.launcher.blur.appLaunch=0
 
+# Battery Saving Props
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.ril.disable.power.collapse=1 \
+pm.sleep_mode=1
+
 # CNE
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
 persist.vendor.cne.feature=1
