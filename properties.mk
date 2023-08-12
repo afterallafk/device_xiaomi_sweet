@@ -239,7 +239,16 @@ vendor.display.qdcm.mode_combine=1 \
 vendor.gralloc.disable_ubwc=0
 
 PRODUCT_SYSTEM_PROPERTIES += \
-debug.hwui.skia_atrace_enabled=false
+debug.hwui.skia_atrace_enabled=false \
+ro.surface_flinger.set_touch_timer_ms=200 \
+ro.surface_flinger.set_idle_timer_ms=80 \
+ro.surface_flinger.enable_frame_rate_override=true \
+ro.surface_flinger.start_graphics_allocator_service=true \
+ro.surface_flinger.running_without_sync_framework=true
+
+# DHA Tunning
+PRODUCT_SYSTEM_PROPERTIES += \
+ro.config.dha_tunnable=1
 
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.sf.force_hwc_brightness=1
@@ -346,6 +355,11 @@ persist.vendor.ims.disableQXDMLogs=1
 # Seamless transfer
 PRODUCT_SYSTEM_PROPERTIES += \
 sys.fflag.override.settings_seamless_transfer=true
+
+# Smoothens UI
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.service.lgospd.enable=0 \
+persist.service.pcsync.enable=0
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
