@@ -335,6 +335,10 @@ persist.vendor.ims.disableDebugLogs=1 \
 persist.vendor.ims.disableIMSLogs=1 \
 persist.vendor.ims.disableQXDMLogs=1
 
+# Seamless transfer
+PRODUCT_SYSTEM_PROPERTIES += \
+sys.fflag.override.settings_seamless_transfer=true
+
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.sensors.enable.mag_filter=true
