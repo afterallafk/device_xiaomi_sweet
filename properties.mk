@@ -301,6 +301,10 @@ persist.vendor.data.iwlan.enable=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Perfetto
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Radio/RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.radio.multisim.config=dsds \
