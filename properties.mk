@@ -152,7 +152,8 @@ persist.device_config.activity_manager.use_compaction=true
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.disable_zsl_mode=1 \
-persist.vendor.camera.is_type=4
+persist.vendor.camera.is_type=4 \
+persist.vendor.camera.perflock.enable=0
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
