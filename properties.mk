@@ -138,7 +138,10 @@ ro.launcher.blur.appLaunch=0
 
 # Battery Saving Props
 PRODUCT_SYSTEM_PROPERTIES += \
+ro.vendor.use_data_netmgrd=true \
+ro.vold.umsdirtyratio=20 \
 ro.ril.disable.power.collapse=1 \
+power.saving.mode=1 \
 pm.sleep_mode=1
 
 # CNE
