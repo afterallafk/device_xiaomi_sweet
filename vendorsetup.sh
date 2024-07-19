@@ -1,4 +1,4 @@
-git clone https://github.com/afterallafk/device_xiaomi_sm6150-common.git -b 14 --depth=1 device/xiaomi/sm6150-common
+git clone https://github.com/afterallafk/device_xiaomi_sm6150-common.git -b 14-euclid --depth=1 device/xiaomi/sm6150-common
 git clone https://github.com/afterallafk/vendor_xiaomi_sweet.git -b 14 --depth=1 vendor/xiaomi/sweet
 git clone https://github.com/afterallafk/vendor_xiaomi_sm6150-common.git -b 14-blaze --depth=1 vendor/xiaomi/sm6150-common
 git clone https://github.com/itsshashanksp/kernel_xiaomi_sm6150.git -b sleepy-inline --depth=1 kernel/xiaomi/sm6150
