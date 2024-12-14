@@ -14,6 +14,13 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common Flare stuff.
 $(call inherit-product, vendor/flare/config/common_full_phone.mk)
 
+# Project Flare specific flags
+TARGET_BOOT_ANIMATION_RES := 1080
+FLARE_BUILD_TYPE := OFFICIAL
+FLARE_MAINTAINER := ＡＤＩＴＹＡ
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := true
+
 PRODUCT_NAME := flare_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
