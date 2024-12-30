@@ -1,9 +1,25 @@
+#!/bin/bash
+
+# Check if the key generation script has been executed before
+KEY_GEN_FLAG=".key_gen_done"
+
+if [ ! -f $KEY_GEN_FLAG ]; then
+    echo "Downloading and generating keys..."
+    curl -O https://raw.githubusercontent.com/ofcsayan/Key-Gen-signed-script/main/generate_all_keys.sh
+    chmod +x generate_all_keys.sh
+    ./generate_all_keys.sh
+    # Create the flag file to indicate script has run
+    touch $KEY_GEN_FLAG
+else
+    echo "Key generation already completed. Skipping..."
+fi
+
+# Clone necessary repositories
 echo "Cloning common tree source"
 git clone https://github.com/afterallafk/device_xiaomi_sm6150-common.git -b 15.0 device/xiaomi/sm6150-common
 
 echo "Cloning vendor trees sources"
 git clone https://github.com/xiaomi-sm6150/proprietary_vendor_xiaomi_sweet.git -b lineage-22.0 vendor/xiaomi/sweet
-
 git clone https://github.com/xiaomi-sm6150/proprietary_vendor_xiaomi_sm6150-common.git -b lineage-22.0 vendor/xiaomi/sm6150-common
 
 echo "Cloning kernel tree source"
